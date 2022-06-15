@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://www.python.org/static/favicon.ico" type="image/svg">
+    <script src="/JS/noclick.js"></script>
+<style>
+        body {margin: 0;}
+        
+td {
+
+
+  text-transform: uppercase;
+}
+
+        ul.topnav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #2b5b84;
+          text-transform: uppercase;
+        }
+        
+        ul.topnav li {float: left;}
+        
+        ul.topnav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.topnav li a:hover:not(.active) {background-color: #012b55;}
+        
+        ul.topnav li a.active {background-color: #2b5b84;}
+        
+        ul.topnav li.right {float: left;}
+        
+        main {
+        
+        padding:0 16px;
+        }
+        
+        @media screen and (max-width: 600px) {
+          ul.topnav li.right, 
+          ul.topnav li {float: none;}
+        }
+
+        @media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px) 
+ {	/* Forzar tabla */
+	table,tbody, th, td, tr { 
+		display: block;}    
+    thead {display: none;}
+        	}
+
+        </style>
+
+    <title>Python</title>
+</head>
+<body>
+<nav>
+    <ul class="topnav">
+        <li><a class="active" href="/py1"><img src="https://www.python.org/static/favicon.ico" alt="" width="20"></a></li>
+        <li><a href="/polls/">Escuela</a></li>
+        <li><a href="#">Código</a></li>
+        <li class="right"><a href="/">Home</a></li>
+         <li>
+          
+          <form class="bd-search position-relative me-auto mt-2"  method="Get" target="_blank" action="http://www.google.com/custom" >
+        <input type="search" class="form-control" autocomplete="off" name="q" placeholder="Buscar"aria-label="Search">
+        <input type="hidden" name="domains" value="https://www.python.org/">    
+        <button type="submit" name="sitesearch" value="https://www.python.org/" class="btn btn-default"></button>
+        <li>
+           </li>
+          </form>
+        </li> 
+
+               
+      </ul>   
+    </nav>
+    <main class="container-fluid mt-1">
+        
+
+
+    </main>
+
+
+
+<main class="container-fluid" >
+  
+<main class="container-fluid" >
+  
+    <h2>  1. Introducción al lenguaje de programación.</h2>
+    
+        <h3>1.1. ¿Qué es Python?</h3>
+        
+        <p>Python es un lenguaje de programación creado por Guido van Rossum a
+            principios de los años 90 cuyo nombre está inspirado en el grupo de cómicos
+            ingleses “Monty Python”. Es un lenguaje similar a Perl, pero con una sintaxis
+            muy limpia y que favorece un código legible. Se trata de un lenguaje
+            interpretado o de script, con tipado dinámico, fuertemente tipado,
+            multiplataforma y orientado a objetos.
+            </p>
+        
+            <h4>Lenguaje interpretado o de script</h4>
+        <p>
+            Un lenguaje interpretado o de script es aquel que se ejecuta utilizando un
+            programa intermedio llamado intérprete, en lugar de compilar el código a
+            lenguaje máquina que pueda comprender y ejecutar directamente una
+            computadora (lenguajes compilados).</p>
+    
+    <h4>Fuertemente tipado</h4>
+        
+    <p> No se permite tratar a una variable como si fuera de un tipo distinto al que
+        tiene, es necesario convertir de forma explícita dicha variable al nuevo tipo
+        previamente. Por ejemplo, si tenemos una variable que contiene un texto
+        (variable de tipo cadena o string) no podremos tratarla como un número (sumar
+        la cadena “9” y el número 8). En otros lenguajes el tipo de la variable cambiaría
+        para adaptarse al comportamiento esperado, aunque esto es más propenso a
+        errores.
+    </p>
+    
+    <h4>Multiplataforma</h4>
+        <p>El intérprete de Python está disponible en multitud de plataformas (UNIX,
+            Solaris, Linux, DOS, Windows, OS/2, Mac OS, etc.) por lo que si no utilizamos
+            librerías específicas de cada plataforma nuestro programa podrá correr en
+            todos estos sistemas sin grandes cambios.
+            Orientado a objetos</p>
+        
+    
+            <h4>Orientado a objetos</h4>
+    
+            <p>La orientación a objetos es un paradigma de programación en el que los
+                conceptos del mundo real relevantes para nuestro problema se trasladan a
+                clases y objetos en nuestro programa. La ejecución del programa consiste en
+                una serie de interacciones entre los objetos. Python también permite la
+                programación imperativa, programación funcional y programación orientada a
+                aspectos.</p>
+    
+    
+       <h4> Uso de Python</h4>
+        <p>Al ser un lenguaje de propósito general, aplicaciones en
+            todos los campos científico-tecnológicos:</p>
+            <ul class="list-group">
+        <li class="list-group-item">Análisis de datos.</li>
+        <li class="list-group-item">Aplicaciones de escritorio.</li>
+        <li class="list-group-item">Bases de datos relacionales / NoSQL
+        <li class="list-group-item">Buenas prácticas de programación / Patrones de diseño.</li>
+        <li class="list-group-item">Concurrencia.</li>
+        <li class="list-group-item">Criptomonedas / Blockchain.</li>
+        <li class="list-group-item">Desarrollo de aplicaciones multimedia.</li>
+        <li class="list-group-item">Desarrollo de juegos.</li>
+        <li class="list-group-item">Desarrollo en dispositivos embebidos.</li>
+        <li class="list-group-item">Desarrollo móvil.</li>
+        <li class="list-group-item">Desarrollo web.</li>
+        <li class="list-group-item">DevOps / Administración de sistemas / Scripts de automatización.</li>
+        <li class="list-group-item">Gráficos por ordenador.</li>
+        <li class="list-group-item">Inteligencia artificial.</li>
+        <li class="list-group-item">Internet de las cosas.</li>
+        <li class="list-group-item">Machine Learning.</li>
+        <li class="list-group-item">Programación de parsers / scrapers / crawlers.</li>
+        <li class="list-group-item">Programación de redes.</li>
+        <li class="list-group-item">Propósitos educativos.</li>
+        <li class="list-group-item">Prototipado de software.</li>
+        <li class="list-group-item">Seguridad.</li>
+        <li class="list-group-item">Tests automatizados.</li>
+        </ul>
+    
+              
+       <h3> Python2  Python3</h3>
+    <table class="table">
+        <tr>
+            <th>Versión</th>
+              <th>
+              Fecha
+            </th>
+        </tr>
+    
+        <tr><td> Python 1.0</td><td> Enero 1994</td>
+            <tr><td> Python 1.5 </td><td>Diciembre 1997</td></tr>
+            <tr><td> Python 1.6 </td><td>Septiembre 2000</td></tr>
+            <tr><td> Python 2.0</td><td> Octubre 2000</td></tr>
+            <tr><td> Python 2.1 </td><td>Abril 2001</td></tr>
+            <tr><td> Python 2.2  </td><td>Diciembre 2001</td></tr>
+            <tr><td> Python 2.3  </td><td>Julio 2003</td></tr>
+            <tr><td> Python 2.4  </td><td>Noviembre 2004</td></tr>
+            <tr><td> Python 2.5  </td><td>Septiembre 2006</td></tr>
+            <tr><td> Python 2.6 </td><td> Octubre 2008</td></tr>
+            <tr><td> Python 2.7  </td><td>Julio 2010</td></tr>
+            <tr><td> Python 3.0 </td><td> Diciembre 2008</td></tr>
+            <tr><td> Python 3.1  </td><td>Junio 2009</td></tr>
+            <tr><td> Python 3.2  </td><td>Febrero 2011</td></tr>
+            <tr><td> Python 3.3  </td><td>Septiembre 2012</td></tr>
+            <tr><td> Python 3.4 </td><td> Marzo 2014</td></tr>
+            <tr><td> Python 3.5 </td><td> Septiembre 2015</td></tr>
+            <tr><td> Python 3.6  </td><td>Diciembre 2016</td></tr>
+            <tr><td> Python 3.7  </td><td>Junio 2018</td></tr>
+            <tr><td> Python 3.8 </td><td> Octubre 2019</td></tr>
+            <tr><td> Python 3.9 </td><td> Octubre 2020</td></tr>
+    
+    </table>
+    
+    <p>    El cambio de Python 2 a Python 3 se perdió
+        la compatibilidad en muchas de las estructuras del lenguaje.
+        la necesidad de aplicar estas modificaciones
+        en beneficio del rendimiento y expresividad del lenguaje de programación. Este cambio
+        implicaba que el código escrito en Python 2 no funcionaría (de manera inmediata) en Python
+        3.En enero de 2020 finalizó oficialmente el soporte a la versión 2.7 del
+        lenguaje de programación Python. </p>
+    
+                                    
+        <h3>1.2. Instalación de Python</h3>
+    
+      <p> Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows
+        o la de 64, en "Tipo de sistema" en la página de "Acerca de". Para llegar a
+        esta página, intenta uno de estos métodos:
+        Presiona la tecla de Windows y la tecla Pause/Break al mismo tiempo
+        Abre el Panel de Control desde el menú de Windows, después accede a
+        Sistema & y Seguridad, luego a Sistema
+        Presiona el botón de Windows, luego accede a Configuración > Sistema >
+        Acerca de Puedes descargar Python para Windows desde la siguiente web</p>
+    
+        <a href="https://www.python.org/downloads/windows/."> <img  src="https://www.python.org/static/favicon.ico" type="image/svg" style="float:right;" alt="pylogo">  </a>
+        
+        <p>Da clic en el enlace "Latest Python 3 Release -Python x.x.x".
+            Si tu ordenador ejecuta la versión de 64 bits de Windows, descarga
+            Windows x86-64 executable installer. De lo contrario, descarga Windows
+            x86 ejecutable installer. Después de descargar el instalador, deberías
+            ejecutarlo (dándole doble click) y seguir las instrucciones.
+            </p>
+        
+        <p>Una cosa para tener en cuenta: Durante la instalación, verás una ventana
+            de "Setup". Asegúrate de marcar las casillas "Add Python 3.6 to PATH" o
+            "Add Python to your environment variables" y hacer click en "Install Now",
+            como se muestra aquí (puede que se vea un poco diferente si estás
+            </p>
+        
+        <p><b> instalando una versión diferente):</b></p>
+    
+    <p> 
+        Cuando la instalación se complete, verás un cuadro de diálogo con un
+        enlace que puedes seguir para saber más sobre Python o sobre la versión
+        que has instalado. Cierra o cancela ese diálogo.
+        Comprobar que se instalo Python con el siguiente instrucción
+    <br><kbd>Python --version</kbd>
+    </p>
+    
+    <h3>Anaconda</h3>
+    
+    Anaconda es un conjunto de herramientas, orientadas en principio a
+    la ciencia de datos, pero que podemos utilizarlas para desarrollo general en Python (junto
+    con otras librerías adicionales).
+    
+    <h3>Miniconda</h3>
+    
+    <p>Instalador mínimo que trae por defecto Python y un pequeño número de
+        paquetes útiles.</p>
+    
+    <h3> PIP Gestión de paquetes</h3>
+    
+    
+    <p>La instalación limpia de Python ya ofrece de por sí muchos paquetes y módulos que vienen
+        por defecto. Es lo que se llama la librería estándar. Pero una de las características más
+        destacables de Python es su inmenso numero de paquetes disponibles en el Python</p>
+    
+    
+        <p><a href="https://pypi.org/"> Package Index (PyPI) </a>   </p>
+    
+    <p>Para gestionar los paquetes que tenemos en nuestro sistema se utiliza la herramienta pip,
+        una utilidad que también se incluye en la instalación de Python.</p>
+    
+    <p><b>Desinstalar y actualizar paquetes</b></p>
+    
+    <p>Instrucciones que usaríamos para cada una de estas operaciones:</p>
+    
+    <p><a href="https://pip.pypa.io/en/stable/cli/"> paquete pandas utilizando pip</a>   </p>
+    <kbd>$ pip install pandas</kbd> <br>
+    <kbd>$ pip uninstall pandas</kbd> <br>
+    <kbd>$ pip install pandas --upgrade</kbd> <br>
+    
+    <!-- <p><b>pip search</b></p>
+    pip_search
+     "pip search" command necessity through PyPi.org
+    
+    Installation & Usage
+    Install with pip install pip_search
+    
+    pip_search -s name
+    pip_search -s version
+    pip_search -s released
+    To use as the traditional pip search <keywords> method, add this alias to your .zshrc, .bashrc, .bash_profile, etc.
+    
+    alias pip='function _pip(){
+        if [ $1 = "search" ]; then
+            pip_search "$2";
+        else pip "$@";
+        fi;
+    };_pip'
+    
+    
+    virtualenv
+    El paquete de Python que nos proporciona la funcionalidad de crear y gestionar entornos
+    virtuales se denomina virtualenv. Su instalación es sencilla a través del gestor de paquetes
+    pip:
+    $ pip install virtualenv
+    <p><kbd>python -m pip search [paquete]</kbd></p> 
+    PEP
+    «Python Enhancement Proposals».-->
+    
+    
+    <p> Existen dos formas de ejecutar código Python. Podemos escribir líneas de código en el intérprete y obtener una respuesta
+        del intérprete para cada línea (sesión interactiva) o bien podemos escribir el código de un programa en un archivo de texto y ejecutarlo.
+       A la hora de realizar una sesión interactiva instalar y utilizar iPython "ipynb", en lugar de la consola interactiva de Python.
+    </p>
+    
+    <p>Cuando vamos a trabajar con Python debemos tener instalado, el intérprete
+    del lenguaje ,nos permitirá ejecutar nuestro código. 
+    Pero normalmente poder escribir programas algo más largos,
+    por lo que también necesitaremos un editor. Un editor es un programa que nos permite
+    crear archivos de código extensión *.py, que luego son ejecutados por
+    el intérprete.
+    </p>
+    <p>Hay otra herramienta interesante dentro del entorno de desarrollo que sería el depurador.
+    por su nombre inglés debugger.
+    Es el módulo que nos permite ejecutar paso a paso nuestro código y visualizar qué está
+    ocurriendo en cada momento. Se suele usar normalmente para encontrar fallos (bugs) en
+    nuestros programas y poder solucionarlos.
+    </p>
+    
+    
+    <h4>intérprete</h4>
+    
+    <p class="tip">  Para hacer una prueba inicial del intérprete vamos a retomar el primer programa.
+      <span>Modo interactivo: ejecutando la orden en tiempo real <br>
+        Modo script: escribiendo el código en Python y ejecutando después con el intérprete</span></p>
+    
+    
+    <p> «Hello, World». Para ello escribimos lo siguiente en el intérprete
+       y pulsamos la tecla ENTER:</p>
+    <p><kbd>>>> print("Hello, World")</kbd></p>
+    
+          <p>Python ruta/hm.py</p>
+           <p>./hm.py</p>
+    
+    
+           <p><kbd># esto es una cadena <kbd></p> 
+               <p><kbd>c = “Hola Mundo”<kbd></p>
+               <p><kbd>print(c)<kbd></p>
+               <p><kbd># y esto es un entero<kbd></p>
+               <p><kbd>e = 23<kbd></p>
+               <p><kbd># podemos comprobarlo con la función type<kbd></p>
+               <p><kbd>type(c)<kbd></p>
+               <p><kbd>type(e)<kbd></p>
+    
+              <h4>  Entornos virtuales</h4>
+                
+            <p>    Cuando trabajamos en distintos proyectos, no todos ellos requieren los mismos paquetes
+                ni siquiera la misma versión de Python. La gestión de estas situaciones no es sencilla si
+                únicamente instalamos paquetes y manejamos configuraciones a nivel globa Como su propio nombre
+                indica se trata de crear distintos entornos en función de las necesidades de cada proyecto, y
+                esto nos permite establecer qué versión de Python usaremos y qué paquetes instalaremos.</p>
+    <h4>jupyter Notebook</h4>
+    
+    
+                <p>
+    
+                    
+    Jupyter Notebook es una aplicación «open-source» que permite crear y compartir
+    documentos que contienen código, ecuaciones, visualizaciones y texto narrativo. Podemos
+    utilizarlo para propósito general aunque suele estar más enfocado a ciencia de datos:
+    limpieza y transformación de datos, simulación numérica, modelado estadístico, visualización
+    o «machine-learning».
+                </p>
+    <p>
+        Podemos verlo como un intérprete de Python (contiene un «kernel» que permite ejecutar
+        código) con la capacidad de incluir documentación en formato Markdown, lo que potencia
+        sus funcionalidades y lo hace adecuado para preparar cualquier tipo de material vinculado
+        con lenguajes de programación.
+        Aunque su uso está más extendido en el mundo Python, existen muchos otros «kernels»
+        sobre los que trabajar en Jupyter Notebook</p>
+    <hr>
+    
+    <h3>Datos</h3>
+    
+    
+    <p>Los programas están formados por código y datos. Pero a nivel interno de la memoria
+         no son más que una secuencia de bits. La interpretación de estos bits depende del
+        lenguaje de programación, que almacena en la memoria no sólo el puro dato sino distintos
+        metadatos.
+        Cada parte de memoria contiene realmente un objeto, de ahí que se diga que en Python
+        todo son objetos. Y cada objeto tiene, al menos, los siguientes campos:
+    </p>
+    
+    <ul class="list-group">
+    
+        <li class="list-group-item">Un tipo del dato almacenado.
+        <li class="list-group-item">Un identificador único para distinguirlo de otros objetos.
+        <li class="list-group-item">Un valor consistente con su tipo.
+    </ul>
+    
+    <img src="/img/py-ob.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    
+    
+    
+    
+    <img src="/img/py-datos.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    
+    <p><b> Palabras reservadas  </b></p>
+    <p><kbd>help("keywords")</kbd></p>
+    
+    <img src="/img/py-key.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    
+    <h4> Python Indentation </h4>
+        <p>
+      La sangría se refiere a los espacios al comienzo de una línea de código.
+            
+    Mientras que en otros lenguajes de programación la sangría en el código es solo para facilitar la lectura, la sangría en Python es muy importante.
+         
+    Python usa sangría para indicar un bloque de código.
+        </p>
+            
+        <div class="alert alert-success w-30" role="alert">
+    Ejemplo <br>
+    if 5 > 2: <br>
+    &#160;print("cinco es mayor que dos!") <br>
+    Python dará un error si omite la sangría:
+          </div>
+          <div class="alert alert-danger" role="alert">
+    Ejemplo <br>
+    Error de sintaxis: <br>
+    if 5 > 2: <br>
+    print("cinco es mayor que dos!") <br>
+    
+          </div>
+          <hr>    <caption>Python Built in Functions conjunto de funciones integradas.</caption>
+          <table class='table table-dark'>
+          
+              <tr>
+              <th>Función</th>
+              <th>Descripción</th>
+          </tr>
+           <tr>
+          <td><a href="#https://www.w3schools.com/python/ref_func_abs.asp">abs()</a></td><td>Devuelve el valor absoluto de un número</td></tr>
+          <tr><td><a href="#https://www.w3schools.com/python/ref_func_all.asp">all()</a></td><td>Devuelve verdadero si todos los elementos en un objeto iterable son verdaderos</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_any.asp">any()</a></td><td>Devuelve True si algún elemento en un objeto iterable es verdadero</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_ascii.asp">ascii()</a></td><td>Devuelve una versión legible de un objeto. Reemplaza los caracteres que no son ascii con un carácter de escape</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_bin.asp">bin()</a></td><td>Devuelve la versión binaria de un número</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_bool.asp">bool()</a></td><td>Devuelve el valor booleano del objeto especificado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_bytearray.asp">bytearray()</a></td><td>Devuelve una matriz de bytes</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_bytes.asp">bytes()</a></td><td>Devuelve un objeto de bytes</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_callable.asp">callable()</a></td><td>Devuelve True si el objeto especificado es invocable, de lo contrario False</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_chr.asp">chr()</a></td><td>Devuelve un carácter del especificado
+                Código Unicode.</td></tr>
+              <tr><td>classmethod()</td><td>Convierte un método en un método de clase</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_compile.asp">compile()</a></td><td>Devuelve el código fuente especificado como un objeto, listo para ejecutarse</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_complex.asp">complex()</a></td><td>Devuelve un número complejo</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_delattr.asp">delattr()</a></td><td>Elimina el atributo especificado (propiedad o método) del objeto especificado</td></tr >
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_dict.asp">dict()</a></td><td>Devuelve un diccionario (Array)</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_dir.asp">dir()</a></td><td>Devuelve una lista de las propiedades y métodos del objeto especificado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_divmod.asp">divmod()</a></td><td>Devuelve el cociente y el resto cuando argumento1 se divide por argumento2</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_enumerate.asp">enumerate()</a></td><td>Toma una colección (por ejemplo, una tupla) y la devuelve como un objeto de enumeración</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_eval.asp">eval()</a></td><td>Evalúa y ejecuta una expresión</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_exec.asp">exec()</a></td><td>Ejecuta el código (u objeto) especificado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_filter.asp">filter()</a></td><td>Utilice una función de filtro para excluir elementos en un objeto iterable</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_float.asp">float()</a></td><td>Devuelve un número de coma flotante</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_format.asp">format()</a></td><td>Da formato a un valor especificado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_frozenset.asp">frozenset()</a></td><td>Devuelve un objeto frozenset</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_getattr.asp">getattr()</a></td><td>Devuelve el valor del atributo especificado (propiedad o método)</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_globals.asp">globals()</a></td><td>Devuelve la tabla de símbolos global actual como un diccionario</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_hasattr.asp">hasattr()</a></td><td>Devuelve True si el objeto especificado tiene el atributo especificado (propiedad/método)</td></tr>
+              <tr><td>hash()</td><td>Devuelve el valor hash de un objeto especificado</td></tr>
+              <tr><td>help()</td><td>Ejecuta el sistema de ayuda integrado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_hex.asp">hex()</a></td><td>Convierte un número en un valor hexadecimal</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_id.asp">id()</a></td><td>Devuelve el id de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_input.asp">input()</a></td><td>Permitir entrada de usuario</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_int.asp">int()</a></td><td>Devuelve un número entero</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_isinstance.asp">isinstance()</a></td><td>Devuelve True si un objeto especificado es una instancia de un objeto especificado</td></tr >
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_issubclass.asp">issubclass()</a></td><td>Devuelve True si una clase específica es una subclase de un objeto específico</td></tr >
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_iter.asp">iter()</a></td><td>Devuelve un objeto iterador</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_len.asp">len()</a></td><td>Devuelve la longitud de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_list.asp">list()</a></td><td>Devuelve una lista</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_locals.asp">locals()</a></td><td>Devuelve un diccionario actualizado de la tabla de símbolos local actual</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_map.asp">map()</a></td><td>Devuelve el iterador especificado con la función especificada aplicada a cada elemento</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_max.asp">max()</a></td><td>Devuelve el elemento más grande en un iterable</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_memoryview.asp">memoryview()</a></td><td>Devuelve un objeto de vista de memoria</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_min.asp">min()</a></td><td>Devuelve el elemento más pequeño en un iterable</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_next.asp">next()</a></td><td>Devuelve el siguiente elemento en un iterable</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_object.asp">object()</a></td><td>Devuelve un nuevo objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_oct.asp">oct()</a></td><td>Convierte un número en octal</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_open.asp">open()</a></td><td>Abre un archivo y devuelve un objeto de archivo</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_ord.asp">ord()</a></td><td>Convertir un número entero
+                que representa el Unicode del carácter especificado</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_pow.asp">pow()</a></td><td>Devuelve el valor de X a la potencia de 3 (lo mismo que X * X * X):</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_print.asp">print()</a></td><td>Imprime en el dispositivo de salida estándar</td></tr>
+              <tr><td>propiedad()</td><td>Obtiene, establece, elimina una propiedad</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_range.asp">range()</a></td><td>Devuelve una secuencia de números, comenzando desde 0 e incrementando en 1 (por defecto)</td ></tr>
+              <tr><td>repr()</td><td>Devuelve una versión legible de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_reversed.asp">reversed()</a></td><td>Devuelve un iterador invertido</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_round.asp">round()</a></td><td>Redondea números</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_set.asp">set()</a></td><td>Devuelve un nuevo objeto establecido</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_setattr.asp">setattr()</a></td><td>Establece un atributo (propiedad/método) de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_slice.asp">slice()</a></td><td>Devuelve un objeto de división</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_sorted.asp">sorted()</a></td><td>Devuelve una lista ordenada</td></tr>
+              <tr><td>staticmethod()</td><td>Convierte un método en un método estático</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_str.asp">str()</a></td><td>Devuelve un objeto de cadena</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_sum.asp">sum()</a></td><td>Suma los elementos de un iterador</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_super.asp">super()</a></td><td>Devuelve un objeto que representa la clase padre</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_tuple.asp">tupla()</a></td><td>Devuelve una tupla</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_type.asp">type()</a></td><td>Devuelve el tipo de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_vars.asp">vars()</a></td><td>Devuelve la propiedad __dict__ de un objeto</td></tr>
+              <tr><td><a href="#https://www.w3schools.com/python/ref_func_zip.asp">zip()</a></td><td>Devuelve un iterador, de dos o más iteradores</td></tr>
+              </table>
+              <hr>
+          
+    
+    <h2>2. Cadenas</h2>
+    <p>Las cadenas no son más que texto encerrado entre comillas simples (‘cadena’) o dobles (“cadena”). Dentro de las comillas se pueden añadir caracteres especiales escapándolos con \, como \n, el carácter de nueva línea, o \t, el de tabulación.
+        Una cadena puede estar precedida por el carácter u o el carácter r, los cuales indican, respectivamente, que se trata de una cadena que utiliza codificación Unicode y una cadena raw (del inglés, cruda). Las cadenas raw se distinguen de las normales en que los caracteres escapados mediante la barra invertida (\) no se sustituyen por sus contrapartidas. Esto es especialmente útil, por ejemplo, para las expresiones regulares, como veremos en el capítulo correspondiente.
+        unicode = u”äóè”
+        </p>
+    
+    <p>raw = r”\n”
+        También es posible encerrar una cadena entre triples comillas (simples o dobles). De esta forma podremos escribir el texto en varias líneas, y al imprimir la cadena, se respetarán los saltos de línea que introdujimos sin tener que recurrir al carácter \n, así como las comillas sin tener que escaparlas.
+        triple = “““primera linea
+        esto se vera en otra linea”””
+        </p>
+    
+    
+      <p>Las cadenas también admiten operadores como +, que funciona realizando
+        una concatenación de las cadenas utilizadas como operandos y *, en la que se
+         repite la cadena tantas veces como lo indique el número utilizado como
+        segundo operando.</p> 
+    
+        <p>
+      
+           
+    herdoc = '''
+    String Methods
+    Python tiene built-in "conjunto de métodos integrados" que puede usar en cadenas
+    capitalize()	
+    casefold()
+    format() 
+    etc...
+    
+    '''
+        </p>
+    
+    <h2>  3. Números enteros y reales.</h2>
+        <h4>Números enteros</h4>
+        
+        <p>Son aquellos números positivos o negativos que no tienen decimales (además
+            del cero).
+            </p>
+        
+    <p>En Python se pueden representar mediante el tipo int (de integer, entero) o el
+        tipo long (largo). La única diferencia es que el tipo long permite almacenar
+        números más grandes. Es aconsejable no utilizar el tipo long a menos que sea
+        necesario, para no malgastar memoria.</p>
+        <p>El tipo int de Python se implementa a bajo nivel mediante un tipo long de C. Y
+            dado que Python utiliza C por debajo, como C, y a diferencia de Java, el rango
+            de los valores que puede representar depende de la plataforma.
+            </p>
+    <p>En la mayor parte de las máquinas el long de C se almacena utilizando 32 bits,
+        es decir, mediante el uso de una variable de tipo int de Python podemos
+        almacenar números de -231 a 231 - 1, o lo que es lo mismo, de -2.147.483.648
+        a 2.147.483.647. En plataformas de 64 bits, el rango es de
+        -9.223.372.036.854.775.808 hasta 9.223.372.036.854.775.807.
+        </p>
+        
+        <p>El tipo long de Python permite almacenar números de cualquier precisión,
+            estando limitados solo por la memoria disponible en la máquina. Al asignar un
+            número a una variable esta pasará a tener tipo int, a menos que el número sea
+            tan grande como para requerir el uso del tipo long.</p>
+    
+     <h4>Reales</h4>
+        <p>Los números reales son los que tienen decimales. En Python se expresan
+            mediante el tipo float.</p>
+        
+    <p>En otros lenguajes de programación, como C, tenemos también el tipo double,
+        similar a float pero de mayor precisión (double = doble precisión). Python, sin
+        embargo, implementa su tipo float a bajo nivel mediante una variable de tipo
+        double de C, es decir, utilizando 64 bits, luego en Python siempre se utiliza
+        doble precisión, y en concreto se sigue el estándar IEEE 754: 1 bit para el
+        signo, 11 para el exponente, y 52 para la mantisa. Esto significa que los valores
+        que podemos representar van desde ±2,2250738585072020 x 10-308 hasta
+        ±1,7976931348623157×10308.</p>
+    
+        <p>La mayor parte de los lenguajes de programación siguen el mismo esquema
+            para la representación interna. Pero como muchos sabréis esta tiene sus
+            limitaciones, impuestas por el hardware.
+            </p>
+        
+        
+    <p>Por eso desde Python 2.4 contamos también con un nuevo tipo Decimal, para
+        el caso de que se necesite representar fracciones de forma más precisa.
+        Sin embargo, este tipo está fuera del alcance de este tutorial, y sólo es
+        necesario para el ámbito de la programación científica y otros relacionados.
+        Para aplicaciones normales poder utilizar el tipo float sin miedo, como ha
+        venido haciéndose desde hace años, aunque teniendo en cuenta que los
+        números en coma flotante no son precisos (ni en este ni en otros lenguajes de
+        programación). Para representar un número real en Python se escribe primero
+        la parte entera, seguido de un punto y por último la parte decimal</p>
+    
+     
+        <h2>3. Operadores aritméticos.</h2>
+    
+    <h4>   Operadores</h4>
+     
+    
+       <p> Veamos ahora qué podemos hacer con nuestros números usando los operadores por defecto. 
+        Para operaciones más complejas podemos recurrir al módulo math.</p>
+    
+    <table class='table table-dark'>
+    <caption> Tabla </caption>
+    <thead>
+    <tr>
+    <th scope='col'>OPERADOR</th>
+    <th scope='col'> DESSCRIPCION</th>
+    <th scope='col'> EJEMPLO</th>
+    <th scope='col'> RESULTADO</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <th scope='row'>+</th>
+    <td>suma</td>
+    <td>c4+4</td>
+    <td>c=8</td>
+    </tr>
+    <tr>
+    <th scope='row'>-</th>
+    <td>resta</td>
+    <td>c=4-2</td>
+    <td>c=2</td>
+    </tr>
+    <tr>
+    <th scope='row'>-</th>
+    <td>negación</td>
+    <td>c-7</td>
+    <td>c=-7</td>
+    </tr>
+    <tr>
+        <th scope='row'>*</th>
+        <td>multiplicación</td>
+        <td>c=2*5</td>
+        <td>c=10</td>
+        </tr>
+      
+            <tr>
+                <th scope='row'>**</th>
+                <td>potenciación</td>
+                <td>c=2**3</td>
+                <td>c=8</td>
+                </tr>
+                <tr>
+                    <th scope='row'>/</th>
+                    <td>división</td>
+                    <td>c=7.5/2</td>
+                    <td>c=3.75</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <th scope='row'>//</th>
+                            <td>división entera</td>
+                            <td>c=7.5//2</td>
+                            <td>c=3.0</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>%</th>
+                                <td>módulo</td>
+                                <td>c=8%3</td>
+                                <td>c=2</td>
+                                </tr>
+                                <tr>
+    </tbody>
+    </table>
+    
+    
+    
+     <p>   Puede que tengas dudas sobre cómo funciona el operador de módulo, y cuál es la diferencia entre división y división entera.
+        El operador de módulo no hace otra cosa que devolvernos el resto de la división entre los dos operandos.
+        En el ejemplo, 7/2 sería 3, con 1 de resto, luego el módulo es 1.</p>
+    
+        <p>La diferencia entre división y división entera no es otra que la que indica su nombre.
+            En la división el resultado que se devuelve es un número real, mientras que en la división entera el resultado que se devuelve es solo la parte entera. No obstante hay que tener en cuenta que si utilizamos dos operandos enteros, Python determinará que queremos que la variable resultado también sea un entero, por lo que el resultado de, por ejemplo, 3 / 2 y 3 // 2 sería el mismo: 1.
+            Si quisiéramos obtener los decimales necesitaríamos que al menos uno de los operadores fuera un número real, bien indicando los decimales.</p>
+    
+    
+        <h3>3.1. Boleanos.</h3>
+        
+    <p>Como decíamos al comienzo del capítulo una variable de tipo booleano sólo puede tener dos valores: True (cierto) y False (falso). Estos valores son especialmente importantes para las expresiones condicionales y los bucles, como veremos más adelante.</p>
+    
+    <p>En realidad el tipo bool (el tipo de los booleanos) es una subclase del tipo int. Puede que esto no tenga mucho sentido para tí si no conoces los términos de la orientación a objetos, que veremos más adelante, aunque tampoco es nada importante. Estos son los distintos tipos de operadores con los que podemos trabajar con valores booleanos, 
+        los llamados operadores lógicos o condicionales.</p>
+    
+        <img src="/img/py-d-b.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    
+    
+    
+    <p>Los valores booleanos son además el resultado de expresiones que utilizan operadores relacionales (comparaciones entre valores):</p>
+    
+    
+    <img src="/img/py-d-bo.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    <h4>   3.2. Operadores lógicos</h4>
+    
+    <p>
+     
+    Estos son operadores que actúan sobre las representaciones en binario de los operandores. Por ejemplo:
+    Si veis una operación como 3 & 2, lo que estás viendo es un and bit a bit entre los números binarios 11 y 10 (las representaciones en binario de 3 y 2).
+    El operador and (&), del inglés “y”, devuelve 1 si el primer bit operando es 1 y el segundo bit operando es 1. Se devuelve 0 en caso contrario.
+    El resultado de aplicar and bit a bit a 11 y 10 sería entonces el número binario 10, o lo que es lo mismo, 2 en decimal (el primer dígito es 1 para ambas cifras, mientras que el segundo es 1 sólo para una de ellas).
+    El operador or (|), del inglés “o”, devuelve 1 si el primer operando es 1 o el segundo operando es 1.
+    Para el resto de casos se devuelve 0. El operador xor u or exclusivo (^) devuelve 1 si uno de los operandos es 1 y el otro no lo es. El operador not (~), del inglés “no”, sirve para negar uno a uno cada bit; es decir, si el operando es 0, cambia a 1 y si es 1, cambia a 0.
+    </p>
+    
+    
+    <p>Por último, los operadores de desplazamiento (<< y >>) sirven para desplazar los bits n posiciones hacia la izquierda o la derecha.</p>
+    
+    
+    <img src="/img/py-d-bl.png" alt="tabla"class="img-fluid img-thumbnail pb-4">
+    
+    <h3>
+        4. Tipos de colecciones de datos.</h3>
+    <!-- <p>4.1. Listas
+        La lista es un tipo de colección ordenada. Sería equivalente a lo que en otros
+        lenguajes se conoce por arrays, o vectores.
+        Las listas pueden contener cualquier tipo de dato: números, cadenas,
+        booleanos, … y también listas.
+        Crear una lista es tan sencillo como indicar entre corchetes, y separados por
+        comas, los valores que queremos incluir en la lista:
+        l = [22, True, “una lista”, [1, 2]]
+        Podemos acceder a cada uno de los elementos de la lista escribiendo el
+        nombre de la lista e indicando el índice del elemento entre corchetes. Ten en
+        cuenta sin embargo que el índice del primer elemento de la lista es 0, y no 1:
+        l = [11, False]
+        mi_var = l[0] # mi_var vale 11
+        Si queremos acceder a un elemento de una lista incluida dentro de otra lista
+        tendremos que utilizar dos veces este operador, primero para indicar a qué
+        posición de la lista exterior queremos acceder, y el segundo para seleccionar el
+        elemento de la lista interior:
+        l = [“una lista”, [1, 2]]
+        También podemos utilizar este operador para modificar un elemento de la lista
+        si lo colocamos en la parte izquierda de una asignación:
+        l = [22, True]
+        l[0] = 99 # Con esto l valdrá [99, True]
+        El uso de los corchetes para acceder y modificar los elementos de una lista es
+        común en muchos lenguajes, pero Python nos depara varias sorpresas muy
+        agradables.
+        8
+        Una curiosidad sobre el operador [] de Python es que podemos utilizar también
+        números negativos. Si se utiliza un número negativo como índice, esto se
+        traduce en que el índice empieza a contar desde el final, hacia la izquierda; es
+        decir, con [-1] accederemos al último elemento de la lista, con [-2] al penúltimo,
+        con [-3], al antepenúltimo, y así sucesivamente.
+        </p> -->
+    </main>
